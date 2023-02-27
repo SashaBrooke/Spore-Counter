@@ -1,0 +1,8 @@
+train: C:\Users\Sasha\yolov7\Training Data (With label files)\train
+test: (Complete path to dataset test folder)
+val: C:\Users\Sasha\yolov7\Training Data (With label files)\test
+#Classes
+nc: 1 # replace classes count 
+#classes names
+#replace all class names list with your custom classes
+namesnames: ['Spore']

@@ -14,6 +14,8 @@ from utils.general import check_img_size, check_requirements, check_imshow, non_
 from utils.plots import plot_one_box
 from utils.torch_utils import select_device, load_classifier, time_synchronized, TracedModel
 
+import sys
+
 
 def detect(save_img=False):
     source, weights, view_img, save_txt, imgsz, trace = opt.source, opt.weights, opt.view_img, opt.save_txt, opt.img_size, not opt.no_trace
@@ -161,6 +163,12 @@ def detect(save_img=False):
         #print(f"Results saved to {save_dir}{s}")
 
     print(f'Done. ({time.time() - t0:.3f}s)')
+
+    # Needs optimising to avoid duplicate image file names
+    with open('log.txt', 'a') as f:
+        f.write(str(save_path.split("\\")[-1]) + " " + str(n).strip("tensor(").strip(")") + "\n")
+        print("Log saved")
+        f.close()
 
 
 if __name__ == '__main__':
