@@ -1,0 +1,1 @@
+Note: This executable file may cause errors when run. Preferably use the executable in the main 'Spore-Counter' folder.
