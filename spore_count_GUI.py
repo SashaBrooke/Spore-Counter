@@ -154,7 +154,8 @@ class FileSelectorGUI(tk.Frame):
 
             def run_detect():
                 # Call spore counting script
-                command = "python detect.py --weights " + self.weights_path_value.cget("text") + " --source " + self.image_path_value.cget("text")
+                command = "python detect.py --weights \"" + self.weights_path_value.cget("text") + "\" --source \""
+                + self.image_path_value.cget("text") + "\""
                 subprocess.call(command)
 
                 # Get the spore count from the log file

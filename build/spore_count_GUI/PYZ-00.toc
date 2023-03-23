@@ -1,4 +1,4 @@
-('C:\\Users\\Sasha\\Documents\\Uni\\Extension_Programming\\Spore-Counter\\build\\spore_count_GUI\\PYZ-00.pyz',
+('C:\\Spore-Counter\\build\\spore_count_GUI\\PYZ-00.pyz',
  [('_compat_pickle',
    'C:\\Users\\Sasha\\AppData\\Local\\Programs\\Python\\Python39\\lib\\_compat_pickle.py',
    'PYMODULE'),
