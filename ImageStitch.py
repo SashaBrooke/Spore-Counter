@@ -52,7 +52,7 @@ def main():
     img_size = 300
 
     # set the directory where the images are stored
-    img_dir = 'source_images/'
+    img_dir = './source_images'
 
     # get the list of image filenames
     img_files = os.listdir(img_dir)
